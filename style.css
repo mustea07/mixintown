@@ -7,9 +7,10 @@ body {
 
 h1 {
   text-align: center;
-  padding: 100px 20px;
+  padding: 150px 20px 20px;
   font-size: 3rem;
   text-shadow: 0 0 20px #ff1493, 0 0 40px #ff1493;
+  z-index: 999;
 }
 
 p {
@@ -22,9 +23,9 @@ p {
   left: 0;
   width: 100%;
   background: rgba(0,0,0,0.7);
-  padding: 20px 0;
+  padding: 15px 0;
   text-align: center;
-  z-index: 999;
+  z-index: 1000;
   backdrop-filter: blur(10px);
 }
 
