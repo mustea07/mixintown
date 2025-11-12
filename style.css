@@ -43,8 +43,13 @@ p {
   transform: scale(1.2);
 @keyframes blink {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  50% { opacity: 0.3; }
 }
+
 .blink {
-  animation: blink 2s infinite;
+  animation: blink 1.5s infinite;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff1493;
+  text-shadow: 0 0 10px #ff1493;
 }
