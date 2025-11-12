@@ -1,192 +1,115 @@
-
+/* SADE VE ŞIK TEMA – PROFESYONEL CATERING */
 body {
-  background: linear-gradient(135deg, #1a0033, #000);
-  color: #fff;
-  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  line-height: 1.6;
 }
 
 h1 {
   text-align: center;
-  padding: 120px 20px 20px;
+  padding: 100px 20px 40px;
   font-size: 3rem;
-  text-shadow: 0 0 20px #ff1493, 0 0 40px #ff1493;
-  z-index: 999;
+  color: #2c3e50;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #34495e;
+  margin: 60px 0 40px;
 }
 
 p {
   text-align: center;
-  font-size: 1.5rem;
-  margin: 20px 0;
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #555;
 }
 
+/* MENÜ – TEMİZ VE SABİT */
 .neon-menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0,0,0,0.7);
+  background: #2c3e50;
   padding: 15px 0;
   text-align: center;
   z-index: 1000;
-  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.neon-menu img {
+  vertical-align: middle;
+  margin-right: 30px;
 }
 
 .neon-menu a {
-  color: #ff1493;
+  color: white;
   text-decoration: none;
-  margin: 0 30px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-shadow: 0 0 10px #ff1493;
-  transition: all 0.4s;
+  margin: 0 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .neon-menu a:hover {
-  text-shadow: 0 0 30px #ff1493, 0 0 50px #ff1493;
-  transform: scale(1.2);
+  color: #1abc9c;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-
-.blink {
-  animation: blink 1.5s infinite;
-  color: #ff1493;
-  text-shadow: 0 0 10px #ff1493;
-}
-/* PULSING EFEKT – BAŞLIK NABIZ ATSIN */
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-h1 {
-  animation: pulse 2s infinite;  /* 2 sn'de bir nabız at */
-  text-align: center;
-  padding: 120px 20px 20px;
-  font-size: 3rem;
-  text-shadow: 0 0 20px #ff1493, 0 0 40px #ff1493, 0 0 60px #ff1493;  /* 3 katmanlı glow */
-  z-index: 999;
-}
-
-/* GLOWING BORDER – PARAGRAFLARA NEON ÇERÇEVE */
-p {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 20px 0;
-  border: 2px solid transparent;  /* Şeffaf çerçeve */
-  border-image: linear-gradient(to right, #ff1493, #00ffff) 1;  /* Renkli neon border */
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);  /* Hafif gölge */
-}
-
-/* DAHA GÜÇLÜ HOVER – MENÜ LİNKLERİ PATLASIN */
-.neon-menu a:hover {
-  text-shadow: 0 0 30px #ff1493, 0 0 50px #ff1493, 0 0 70px #ff1493;  /* 3 katmanlı patlama */
-  transform: scale(1.2);
-  color: #00ffff;  /* Hover'da mavi'ye dön */
-}
-
-/* RAINBOW NEON – ALT YAZI RENK GEÇİŞİ */
-.blink {
-  animation: blink 1.5s infinite;
-  text-align: center;
-  font-size: 1.2rem;
-  background: linear-gradient(45deg, #ff1493, #00ffff, #ff1493);  /* Renk geçişi */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;  /* Arka planı metne uygula */
-  text-shadow: 0 0 10px #ff1493;
-}
-
-/* HİZMET KARTLARI */
-.hizmet-kart {
-  background: rgba(0,0,0,0.5);
-  margin: 20px auto;
-  padding: 20px;
-  width: 80%;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #ff1493;
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  text-shadow: 0 0 15px #ff1493;
-  margin: 50px 0;
-}
-
-section {
-  padding: 50px 20px;
-}
-
-/* FORM STİLİ */
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-input, textarea, button {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
-  background: rgba(255,255,255,0.1);
-  color: #fff;
-}
-
-button {
-  background: #ff1493;
-  cursor: pointer;
-  font-weight: bold;
-  text-shadow: 0 0 10px #fff;
-}
-
-button:hover {
-  box-shadow: 0 0 20px #ff1493;
-}
 /* GALERİ */
-#yaptiklarimiz {
-  padding: 60px 20px;
-  background: rgba(0,0,0,0.5);
-}
-
-#yaptiklarimiz h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  text-shadow: 0 0 15px #ff1493;
-  margin-bottom: 40px;
-}
-
 .galeri {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+  padding: 40px 20px;
 }
 
 .galeri img {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 0 20px #ff1493;
-  transition: all 0.4s;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
 .galeri img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 40px #ff1493;
+}
+
+/* FORM */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  background: #1abc9c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #16a085;
+}
+
+html {
+  scroll-behavior: smooth;
 }
