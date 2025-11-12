@@ -1,16 +1,18 @@
 body {
-    background: linear-gradient(135deg, #1a0033, #000);
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
+  background: linear-gradient(135deg, #1a0033, #000);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
+
 h1 {
-    text-align: center;
-    padding: 100px 20px;
-    font-size: 3rem;
-    text shadow: 0 0 20px #ff1493, 0 0 40px #ff1493;
+  text-align: center;
+  padding: 100px 20px;
+  font-size: 3rem;
+  text-shadow: 0 0 20px #ff1493, 0 0 40px #ff1493;
 }
+
 p {
-    text-align: venter;
-    font-size: 1.5rem;
-    }
+  text-align: center;
+  font-size: 1.5rem;
+}
