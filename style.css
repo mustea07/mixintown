@@ -41,4 +41,10 @@ p {
 .neon-menu a:hover {
   text-shadow: 0 0 30px #ff1493, 0 0 50px #ff1493;
   transform: scale(1.2);
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.blink {
+  animation: blink 2s infinite;
 }
