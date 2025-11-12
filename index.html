@@ -4,22 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mix in Town</title>
+    <title>Mix in Town – Organizasyonların Adresi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="neon-menu">
+    <img src="logo.png" alt="Mix in Town" width="180" style="vertical-align: middle; margin-right: 30px;">
     <a href="#anasayfa">Ana Sayfa</a>
-    <a href="#organizasyonlar">Organizasyonlar</a>
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#hakkinda">Hakkında</a>
     <a href="#iletisim">İletişim</a>
   </nav>
 
-  <h1>Mix in Town'a Hoş Geldiniz! 🍸</h1>
-  
-  <p id="anasayfa">En iyi organizasyonlar burada başlar.</p>
-  
-  <p id="organizasyonlar">Yakında burada olacağız — Travis kodluyor...</p>
-  
-  <p id="iletisim">İletişim için: travis@mixintown.com</p>
+  <!-- ANA SAYFA -->
+  <section id="anasayfa">
+    <h1>Mix in Town'a Hoş Geldiniz! 🍸</h1>
+    <p>En iyi organizasyonlar burada başlar.</p>
+    <p>Yakında burada olacağız — Travis kodluyor...</p>
+  </section>
+
+  <!-- HİZMETLER -->
+  <section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <div class="hizmet-kart">
+      <h3>Kokteyl Partileri</h3>
+      <p>Profesyonel bar setup ve menü tasarımı.</p>
+    </div>
+    <div class="hizmet-kart">
+      <h3>Organizasyon Danışmanlığı</h3>
+      <p>Etkinlik planlama ve koordinasyon.</p>
+    </div>
+  </section>
+
+  <!-- HAKKINDA -->
+  <section id="hakkinda">
+    <h2>Hakkımızda</h2>
+    <p>10 yıllık bar kaptanı deneyimiyle, Mix in Town organizasyonlarınızı mükemmelleştirir.</p>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <form action="https://formspree.io/f/your-id" method="POST">  <!-- Formspree ücretsiz e-posta gönderir -->
+      <input type="text" name="isim" placeholder="Adınız" required>
+      <input type="email" name="email" placeholder="E-posta" required>
+      <textarea name="mesaj" placeholder="Mesajınız" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
 </body>
 </html>
