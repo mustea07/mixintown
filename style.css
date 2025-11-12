@@ -157,3 +157,36 @@ button {
 button:hover {
   box-shadow: 0 0 20px #ff1493;
 }
+/* GALERİ */
+#yaptiklarimiz {
+  padding: 60px 20px;
+  background: rgba(0,0,0,0.5);
+}
+
+#yaptiklarimiz h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 0 0 15px #ff1493;
+  margin-bottom: 40px;
+}
+
+.galeri {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeri img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #ff1493;
+  transition: all 0.4s;
+}
+
+.galeri img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px #ff1493;
+}
